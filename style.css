@@ -1,0 +1,76 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+
+    background-image: url('images/oh-la-la.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.container{
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    padding: 50px;
+ opacity: 0.9;
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.048);
+    
+
+}
+
+ul{
+
+    border-bottom: 1px solid grey;
+
+    margin-bottom: 10px;
+
+    padding: 15px;
+    
+}
+
+
+ul>li{
+
+
+    list-style: none;
+
+    
+}
+
+
+.content input{
+
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+ul input{
+
+    display: none;
+}
+
+ul input+label::before{
+
+    content: "⬜️";
+}
+
+ul input:checked+label::before{
+
+    content: "🌮";
+}
